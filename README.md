@@ -53,10 +53,126 @@ The application is organized into three primary modules:
 - Git
 - GitHub
 
-## Project Status
+---
 
-🚧 Phase 1 – Business Analysis & Project Setup
+## 📝 Manual Testing Documents
 
-## Application
+The project contains manual testing documents including:
 
-https://katalon-demo-cura.herokuapp.com/
+- Test Plan
+- Test Cases
+- Bug Report
+- RTM (Requirement Traceability Matrix)
+
+Location:
+
+manual-testing/
+
+---
+
+## 🤖 Automation Framework
+
+Framework Features:
+
+- Page Object Model (POM)
+- Reusable utility methods
+- Config file support
+- Screenshot capture on failure
+- HTML Test Reports
+- Cross-browser support (future enhancement)
+
+Current Automated Module:
+
+- Login
+
+Future Modules:
+
+- Registration
+- Event Booking
+- Profile Management
+
+---
+
+## ▶️ How to Run Tests
+
+### 1. Clone Repository
+
+```bash
+git clone <repository-url>
+```
+
+### 2. Navigate to Project
+
+```bash
+cd eventhub-automation-framework
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run Tests
+
+```bash
+pytest
+```
+
+### 5. Generate HTML Report
+
+```bash
+pytest --html=reports/report.html
+```
+
+---
+
+## 📁 Folder Structure
+
+config/
+Stores configuration files
+
+pages/
+Contains Page Object classes
+
+tests/
+Contains all test scripts
+
+utils/
+Utility methods and helper functions
+
+reports/
+HTML execution reports
+
+screenshots/
+Failure screenshots
+
+manual-testing/
+Manual QA documents
+
+---
+
+## 👤 Author
+
+Pranay Jha
+
+BCA Student | QA Automation Engineer (Python)
+
+Skills:
+
+- Manual Testing
+- Selenium
+- Python
+- Pytest
+- Git & GitHub
+- SQL (Learning)
+
+
+## 📌 Future Improvements
+
+- Data Driven Testing
+- API Automation
+- CI/CD using GitHub Actions
+- Docker Integration
+- Parallel Test Execution
+- Cross Browser Testing
