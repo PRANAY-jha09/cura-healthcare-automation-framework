@@ -55,6 +55,14 @@ The application is organized into three primary modules:
 
 ---
 
+## Framework Components
+
+- Driver Factory
+- Configuration Loader
+- Base Page
+- Selenium
+- Pytest
+
 ## 📝 Manual Testing Documents
 
 The project contains manual testing documents including:
