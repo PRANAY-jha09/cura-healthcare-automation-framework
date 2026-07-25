@@ -1,1 +1,6 @@
-mkdir
+{
+  "base_url": "https://katalon-demo-cura.herokuapp.com/",
+  "browser": "chrome",
+  "implicit_wait": 10,
+  "explicit_wait": 20
+}
