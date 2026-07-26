@@ -1,6 +1,6 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
+from selenium.webdriver.support.ui import Select
 
 class BasePage:
 
@@ -24,3 +24,9 @@ class BasePage:
         return self.wait.until(
             EC.visibility_of_element_located(locator)
         ).text
+
+    def select_dropdown(self,locator,visible_text):
+        dropdown =Select(
+            self.driver.find_element(*locator)
+        )
+        dropdown.select_by_visible_text(visible_text)
