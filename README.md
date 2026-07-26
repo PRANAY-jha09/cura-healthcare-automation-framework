@@ -176,11 +176,4 @@ Skills:
 - SQL (Learning)
 
 
-## 📌 Future Improvements
 
-- Data Driven Testing
-- API Automation
-- CI/CD using GitHub Actions
-- Docker Integration
-- Parallel Test Execution
-- Cross Browser Testing
