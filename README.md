@@ -166,14 +166,6 @@ Pranay Jha
 
 BCA Student | QA Automation Engineer (Python)
 
-Skills:
-
-- Manual Testing
-- Selenium
-- Python
-- Pytest
-- Git & GitHub
-- SQL (Learning)
 
 
 
