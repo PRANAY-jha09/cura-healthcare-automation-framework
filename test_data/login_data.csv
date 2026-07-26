@@ -1,0 +1,5 @@
+username,password,expected
+John Doe,ThisIsNotAPassword,Pass
+WrongUser,WrongPassword,Fail
+John Doe,WrongPassword,Fail
+WrongUser,ThisIsNotAPassword,Fail
