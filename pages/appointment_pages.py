@@ -2,18 +2,33 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from core.base_page import BasePage
 
+
 class AppointmentPage(BasePage):
+
     FACILITY = (By.ID, "combo_facility")
     READMISSION = (By.ID, "chk_hospotal_readmission")
-    MEDICAID = (By.ID, "radio_program_medicaid")
+
     MEDICARE = (By.ID, "radio_program_medicare")
+    MEDICAID = (By.ID, "radio_program_medicaid")
     NONE = (By.ID, "radio_program_none")
+
     VISIT_DATE = (By.ID, "txt_visit_date")
     COMMENT = (By.ID, "txt_comment")
+
     BOOK_BUTTON = (By.ID, "btn-book-appointment")
 
-    def book_appointment(self,facility,readmission,healthcare_program,visit_date,comment):
-        Select(self.driver.find_element(*self.FACILITY)).select_by_visible_text(facility)
+    def book_appointment(
+            self,
+            facility,
+            readmission,
+            healthcare_program,
+            visit_date,
+            comment
+    ):
+
+        Select(
+            self.driver.find_element(*self.FACILITY)
+        ).select_by_visible_text(facility)
 
         if readmission:
             self.click(self.READMISSION)
