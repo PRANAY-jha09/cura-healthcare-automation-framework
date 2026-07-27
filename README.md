@@ -134,29 +134,57 @@ pytest --html=reports/report.html
 ```
 
 ---
+## 📂 Project Structure
 
-## 📁 Folder Structure
-
-config/
-Stores configuration files
-
-pages/
-Contains Page Object classes
-
-tests/
-Contains all test scripts
-
-utils/
-Utility methods and helper functions
-
-reports/
-HTML execution reports
-
-screenshots/
-Failure screenshots
-
-manual-testing/
-Manual QA documents
+```text
+cura_automation/
+│
+├── venv/                              # Python virtual environment
+│
+├── config/
+│   ├── config.ini                     # Environment configuration
+│   └── test_data.json                 # Test data (Optional)
+│
+├── pages/
+│   ├── __init__.py
+│   ├── base_page.py
+│   ├── login_page.py
+│   ├── home_page.py
+│   ├── appointment_page.py
+│   ├── history_page.py
+│   └── logout_page.py
+│
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   ├── test_login.py
+│   ├── test_make_appointment.py
+│   ├── test_appointment_history.py
+│   ├── test_logout.py
+│   └── test_negative_login.py
+│
+├── utilities/
+│   ├── __init__.py
+│   ├── driver_factory.py
+│   ├── config_reader.py
+│   ├── logger.py
+│   ├── wait_utils.py
+│   ├── screenshot_utility.py
+│   ├── random_data.py
+│   └── excel_reader.py
+│
+├── reports/
+│   ├── report.html
+│   ├── logs/
+│   │   └── automation.log
+│   └── screenshots/
+│
+├── requirements.txt
+├── pytest.ini
+├── README.md
+├── .gitignore
+└── run_tests.bat
+```
 
 ---
 
